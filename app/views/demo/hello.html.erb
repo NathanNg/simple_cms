@@ -1,0 +1,29 @@
+<h1>hello template</h1>
+<h2>hello world</h2>
+
+<%= 1+1 %>
+<br />
+<% target = "target" %>
+<%= "hellow #{target}" %>
+
+<br />
+<% 3.times do %>
+<%= 'xxx' %>
+<% end %>
+
+<br />
+<% @array.each do |n| %>
+<%= n %> <br />
+<%end%>
+
+<a href="/demo/index">demo index </a> <br />
+<%= link_to('demo index rails', {action: 'index'}) %>
+
+<br />
+ID: <%= params[:id] %> <br />
+ID: <%= @id %> <br />
+Next Page: <%= @page + 1 %><br />
+
+<hr />
+
+<%= params.inspect %>

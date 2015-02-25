@@ -1,0 +1,28 @@
+<%= error_messages_for(@section) %>
+
+<table summary="section form field">
+  <tr>
+    <th><%= f.label(:page_id) %></th>
+    <td><%= f.select(:page_id, @pages.map {|s| [s.name, s.id]} ) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:name) %></th>
+    <td><%= f.text_field(:name) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:position) %></th>
+    <td><%= f.select(:position, 1..@section_count) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:visible) %></th>
+    <td><%= f.check_box(:visible) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:content) %></th>
+    <td><%= f.text_area(:content) %></td>
+  </tr>
+  <tr>
+    <th><%= f.label(:content_type) %></th>
+    <td><%= f.text_area(:content_type) %></td>
+  </tr>
+</table>

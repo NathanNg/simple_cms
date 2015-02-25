@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple CMS</title>
+    <%= javascript_include_tag('public')%>
+  </head>
+  <body>
+    <div id="header"
+      <h1>Simple CMS Admin</h1>
+    </div>
+    <div id="main">
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="footer">
+      <p id="copyright"> &copy; Simple CMS / Nathan Nguyen </p>
+    </div>
+  </body>
+</html>

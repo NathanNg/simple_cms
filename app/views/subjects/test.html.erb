@@ -1,0 +1,46 @@
+<h1>Form</h1>
+<form action="/subject/create" method="post">
+  <input type="text" name="name"/>
+  <input type="text" name="position" />
+  <input type="test" name="visible" />
+
+  <input type="submit" name="commit" value="Create Subject" />
+</form>
+
+<h2>html array of parameters</h2>
+<form action="/subject/create" method="post">
+  <input type="text" name="subject[name]"/>
+  <input type="text" name="subject[position]" />
+  <input type="test" name="subject[visible]" />
+
+  <input type="submit" name="commit" value="Create Subject" />
+</form>
+
+<h3>form_tag</h3>
+
+<%= form_tag(:action => 'create') do %>
+<%= text_field_tag('subject[name]') %>
+<%= text_field_tag('subject[position]') %>
+<%= text_field_tag('subject[visible]') %>
+
+<%= submit_tag("create subject") %>
+<% end %>
+
+<h3>form_tag, object-ware</h3>
+
+<%= form_tag(:action => 'create') do %>
+<%= text_field_tag(:subject, :name) %>
+<%= text_field_tag(:subject, :position) %>
+<%= text_field_tag(:subject, :visible) %>
+
+<%= submit_tag("create subject") %>
+<% end %>
+
+<h4>form for</h4>
+<%= form_for(:subject, :url => {:action => 'create'}) do |f| %>
+<%= f.text_field(:name) %>
+<%= f.text_field(:position) %>
+<%= f.text_field(:visible) %>
+
+<%= submit_tag("Create Subject") %>
+<% end %>
