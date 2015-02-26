@@ -1,1 +1,1 @@
-This is a simple cms application using Ruby on Rails framework.
+Web CMS application using Ruby on Rails framework.
