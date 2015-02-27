@@ -3,4 +3,4 @@
 Web CMS application using Ruby on Rails framework.  The application manages relationship between Subject, Page, and Section.  It allows the application to CRUD admin users.
 
 
-[Live Demo](http://google.com)
+[Live Demo](https://glacial-mountain-1435.herokuapp.com/)
