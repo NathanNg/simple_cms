@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20150219021901) do
 
-  create_table "Admin_users", force: :cascade do |t|
+  create_table "admin_users", force: :cascade do |t|
     t.string   "first_name",      limit: 25
     t.string   "last_name",       limit: 50
     t.string   "email",           limit: 100, default: "", null: false
