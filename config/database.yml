@@ -48,8 +48,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: simple_cms_production
   username: simple_cms
   password: <%= ENV['SIMPLE_CMS_DATABASE_PASSWORD'] %>
