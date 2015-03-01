@@ -44,13 +44,13 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
+   production:
+     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: simple_cms_production
-  username: simple_cms
-  password: <%= ENV['SIMPLE_CMS_DATABASE_PASSWORD'] %>
+# production:
+#   adapter: postgresql
+#   encoding: unicode
+#   pool: 5
+#   database: simple_cms_production
+#   username: simple_cms
+#   password: <%= ENV['SIMPLE_CMS_DATABASE_PASSWORD'] %>
